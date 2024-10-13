@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from nicegui import ui
 
-from provisionr.models import create_session
+from provisionr.database import create_session
 from provisionr.services import get_team, get_teams
 
 
