@@ -5,9 +5,18 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+  "aiosqlite",
   "alembic",
   "fastapi",
   "nicegui",
   "pydantic",
+  "sqlalchemy[asyncio]",
   "uvicorn",
+]
+
+[tool.uv]
+dev-dependencies = [
+  "faker",
+  "pytest",
+  "pytest-asyncio",
 ]
